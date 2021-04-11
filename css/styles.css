@@ -92,6 +92,10 @@ button:focus,
   opacity: 0.8;
 }
 
+input.value {
+  color: #808080;
+}
+
 .profile_portrait {
   float: left;
   width: 250px;
