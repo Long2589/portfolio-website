@@ -100,16 +100,18 @@ input.value {
 
 .page-header {
   display: flex;
-  width: 100%;
+  width: 90%;
   padding: 15px;
+  max-width: 700px;
 }
 
 .page-header__item {
-  flex: 1 1 200px;
+  flex: 0 1 100px;
 }
 
 .page-header__item:last-child {
   flex-grow: 1;
+  flex-shrink: 3;
   text-align: right;
 }
 
@@ -119,7 +121,7 @@ input.value {
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .navigation-list__item--active {
@@ -127,9 +129,13 @@ input.value {
 }
 
 .profile {
-  max-width: 900px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: center;
+}
+
+.profile__item {
+  flex: 0 1 auto;
 }
 
 .profile__portrait {
@@ -207,8 +213,35 @@ input.value {
 }
 
 @media all and (max-width: 500px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p,
+  a {
+    font-size: 12px;
+  }
+
+  .page-header {
+    flex-direction: column;
+  }
+
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .profile {
+    flex-direction: column;
+    margin-left: 15px;
+    align-items: flex-start;
+  }
+
+  .profile__item:last-child {
+    flex-wrap: wrap;
   }
 }
 
