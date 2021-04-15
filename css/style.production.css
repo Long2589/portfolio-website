@@ -105,12 +105,11 @@ input.value {
 }
 
 .page-header__item {
-  flex: 0 0 10px;
+  flex: 0 0 auto;
 }
 
 .page-header__item:last-child {
   flex-grow: 1;
-  flex-shrink: 3;
   text-align: right;
 }
 
@@ -129,7 +128,7 @@ input.value {
 
 .profile {
   width: 100%;
-  margin: 0 auto;
+  padding: 15px;
   text-align: center;
   display: flex;
 }
